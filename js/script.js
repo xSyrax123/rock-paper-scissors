@@ -47,7 +47,7 @@ function check_winner_round(player, computer) {
     result_human.textContent = `You chose ${choices[player]}.`;
     result_computer.textContent = `Computer choose ${choices[computer]}.`;
     draws++;
-  } else if ((player-computer) % 3 === 1) {
+  } else if ((player-computer+3) % 3 === 1) {
     score_human.textContent = Number(score_human.textContent) + 1;
     result_round.textContent = "You won.";
     result_human.textContent = `You chose ${choices[player]}.`;
